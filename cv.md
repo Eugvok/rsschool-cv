@@ -28,3 +28,30 @@ I really like the possibility of remote work, which allows you to carry out prof
 depending on my talents, abilities and practice, not according to some other criteria + nice comunity. 
 
 ***  
+* Skills:
+    + HTML
+    + CSS/SCSS
+    + JS (basics)
+    + Git
+    + Gulp (basics)
+    + Marsy
+
+***  
+
+### Code example:
+
+>Write a function that takes an integer as input, and
+>returns the number of bits that are equal to one in the binary representation of that number.
+>You can guarantee that input is non-negative.
+
+``` 
+var countBits = function(n) {  
+	let x=''; //string 4 n conversation  
+	let c=0;  // bit count  
+	var arr = new Array();  
+	x = (n).toString(2); //convert from decimal to binary string  
+	arr = Array.from(x); //convert binary string to array of numbers  
+	for (i=0; i<arr.length; i++) {if(arr[i]==1) {c++;}}  
+	return c;  
+}  
+```
