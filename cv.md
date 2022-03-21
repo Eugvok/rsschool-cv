@@ -55,3 +55,18 @@ var countBits = function(n) {
 	return c;  
 }  
 ```
+
+[Codewars](https://www.codewars.com/kata/526571aae218b8ee490006f4/train/javascript)
+  
+### My works:  
+[git/Eugvok](https://github.com/Eugvok/My-works.git)  
+  
+### Education:  
+2003-2005 BMSTU mechanical engineering technologies (not completed)  
+  
+#### Stepik courses:  
+[Web development for beginners: HTML & CSS](https://stepik.org/cert/578771)<br>
+[JavaScript for beginners](https://stepik.org/cert/1237986)
+  
+### English:  
+[EF SET](https://www.efset.org/quick-check/take-test/#set15-190/result)  
