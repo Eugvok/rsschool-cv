@@ -1,0 +1,346 @@
+@font-face {
+   font-family: 'Georgia';
+   src: url("Georgia.woff2") format("woff2"), url("Georgia.woff") format("woff");
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+
+/*RESET ============================================*/
+
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+
+*,
+*:before,
+*:after {
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+*::before,
+*::after {
+   padding: 0;
+   margin: 0;
+   border: 0;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+:focus,
+:active {
+   outline: none;
+}
+
+a:focus,
+a:active {
+   outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+   display: block;
+}
+
+html,
+body {
+   width: 100%;
+   height: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+
+html.lock,
+body.lock {
+   overflow: hidden;
+}
+
+
+/* ! TO SET max-width */
+
+@media (max-width: 1170px) {
+   html.lock,
+   body.lock {
+      width: 100%;
+      position: fixed;
+      overflow: hidden;
+   }
+}
+
+input,
+button,
+textarea {
+   font-family: "Rubik";
+}
+
+input::-ms-clear {
+   display: none;
+}
+
+button {
+   cursor: pointer;
+}
+
+button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+}
+
+a,
+a:visited {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+ol li::before {
+   counter-increment: ol-numbers;
+   content: counter(ol-numbers) ")";
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 40px;
+   text-align: right;
+   color: #000;
+}
+
+img {
+   vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: inherit;
+   font-weight: inherit;
+}
+
+
+/*MAIN ===========================================*/
+
+body {
+   line-height: 18px;
+   font-size: 14px;
+   color: rgb(0, 0, 0);
+}
+
+.wrapper {
+   padding: 0px 15px;
+   max-width: 1070px;
+   margin: 0 auto;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+}
+
+.header__container {
+   display: flex;
+   min-height: 80px;
+   align-items: center;
+}
+
+.header__logo {
+   margin: 0px 15px;
+}
+
+.header__logo h2 {
+   font-weight: bold;
+   color: #000;
+   text-transform: uppercase;
+   font-size: 24px;
+   letter-spacing: 1px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+   font-size: 18px;
+   letter-spacing: 1px;
+}
+
+.header__logo h2 l {
+   letter-spacing: -3px;
+}
+
+.header__logo h2 span {
+   font-size: 18px;
+   letter-spacing: 2px;
+   margin-left: 5px;
+}
+
+.header__menu {
+   flex: 1 1 auto;
+}
+
+.menu__list {
+   display: flex;
+   justify-content: flex-end;
+}
+
+.menu__list li {
+   list-style: none;
+}
+
+.menu-item {
+   font-size: 14px;
+   margin: 0px 12px 0px 0px;
+}
+
+.menu-item a {
+   color: #000;
+}
+
+.menu-item a:hover {
+   transition: all 0.3s ease 0s;
+   color: rgb(42, 146, 29);
+   text-decoration: underline;
+}
+
+.main {
+   flex: 1 1 auto;
+}
+
+
+/*! H2 */
+
+.main h2 {
+   margin: 15px;
+}
+
+.iam {
+   margin: 10px 15px;
+}
+
+.contacts {
+	margin-left: 25px;
+}
+
+.contacts span {
+	font-size: 18px;
+}
+
+/*! H1  */
+
+.iam h1 {
+   font-size: 25px;
+   color: rgb(255, 128, 0);
+   margin: 25px 0px;
+}
+
+
+/*! H3 */
+
+h3 {
+   font-weight: bold;
+   margin: 10px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 18px;
+   color: rgb(13, 100, 49);
+}
+
+.about p {
+   margin: 18px 20px;
+}
+
+.about-item {
+   font-size: 15px;
+   margin: 10px 0px 10px 25px;
+}
+
+.about-item:first-letter {
+   text-transform: uppercase;
+}
+
+.skills-item {
+	margin: 0px 0px 0px 25px;
+}
+
+.code__example {
+   padding: 0px 0px 15px 0px;
+}
+
+.code__example p {
+   margin: 15px 20px;
+}
+
+.code__example a {
+   font-weight: bold;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   color: brown;
+   font-size: 20px;
+   margin: 25px 20px;
+}
+
+.my__works {
+   padding: 0px 0px 15px 0px;
+}
+
+.my__works a {
+   margin: 15px 20px;
+   font-weight: bold;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   color: brown;
+   font-size: 20px;
+}
+
+.education p {
+   margin: 15px 20px;
+}
+
+.education h4 {
+   margin: 15px 20px;
+   font-weight: bold;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   color: rgb(0, 0, 0);
+   font-size: 18px;
+}
+
+.education a {
+   font-size: 15px;
+   color: brown;
+}
+
+.education ul li {
+	margin-left: 40px;
+	color: brown;
+}
+
+.footer__container {
+   height: 60px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.footer__git {
+   display: flex;
+   align-items: center;
+   font-size: 18px;
+   color: #000;
+}
+
+.footer__git img {
+   margin-right: 5px;
+}
+
+.footer__container h6 {
+   line-height: 1px;
+   font-size: 20px;
+   color: #000;
+   font-weight: bold;
+}
